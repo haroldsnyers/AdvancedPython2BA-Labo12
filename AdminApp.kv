@@ -1,0 +1,83 @@
+AdminAppForm:
+    rows: 3
+    cols:4
+    linktv_spr: linktv
+    linkmovie_spr: linkmovie
+    users_spr: users
+    detail_tv_txt: detail_tv
+    detail_movie_txt: detail_movie
+    detail_users_txt: detail_users
+    Label:
+        text: str(len(root.linktv)) + ' Tvshows loaded.'
+        size_hint_y: 1
+        size_hint_x: 2
+
+    Spinner:
+        id: linktv
+        values: root.titles_tv
+        size_hint_y: 1
+        size_hint_x: 2
+        on_text: root.showdetail_tv(self.text)
+
+    TextInput:
+        id: detail_tv
+        readonly: True
+        size_hint_y: 7
+        size_hint_x: 5
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 1
+        Button:
+            text: 'Delete'
+            on_press: root.delete_tv()
+    
+    Label:
+        text: str(len(root.linkmovie)) + ' movies loaded.'
+        size_hint_y: 1
+        size_hint_x: 2
+
+    Spinner:
+        id: linkmovie
+        values: root.titles_movie
+        size_hint_y: 1
+        size_hint_x: 2
+        on_text: root.showdetail_movie(self.text)
+
+    TextInput:
+        id: detail_movie
+        readonly: True
+        size_hint_y: 7
+        size_hint_x: 5
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 1
+        Button:
+            text: 'Delete'
+            on_press: root.delete_movie()
+
+    Label:
+        text: str(len(root.users)) + ' users loaded.'
+        size_hint_y: 1
+        size_hint_x: 2
+
+    Spinner:
+        id: users
+        values: root.users_list
+        size_hint_y: 1
+        size_hint_x: 2
+        on_text: root.showdetail_users(self.text)
+
+    TextInput:
+        id: detail_users
+        readonly: True
+        size_hint_y: 7
+        size_hint_x: 3
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 1
+        Button:
+            text: 'Delete'
+            on_press: root.delete_users()

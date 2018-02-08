@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Tvshow&Movies</title>
+      <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body>
+      <header>
+          
+          <div class="container">
+              <div id="branding">
+                  <img class="logo" src="https://lh3.googleusercontent.com/Ozfp2nKok9iLqsiJ8J2akhPMoEe5EeAtd2gZSju25Z6TQl7fDqPFW93oiXIQudK4UwkiNwoymkrrE4xKowQ2ImiQ_t4DxzL54kGScQOi2_ya1SOoo8GMpR__MN1cGsR98cm0Ae97Lw">
+              </div>
+              <nav>
+                  <ul>
+                      {{user}}
+                      <li><a href="addtvmovie">Add tvshow/movie</a></li>
+                      <li><a href="about">About</a></li>
+                      {{usersession}}
+                  </ul>
+              </nav>
+          </div>
+      </header>
+
+      <div id="loginBox" style="display:none;">
+          <img src="https://image.freepik.com/free-icon/male-user-shadow_318-34042.jpg" class="user">
+          <button id="buttonClose" type="button" name="close" value="X" onclick="hideDiv()">X</button>
+          <h2 id="h2-loginbox">Log in Here</h2>
+          <form action="login">
+              <p>Email or Username</p>
+              <input type="text" name="uname" required="required" placeholder="Enter Email or username">
+              <p>Password</p>
+              <input type="password" required="required" name="psw" placeholder="*******">
+              <input type="submit" name="" value="Sign In">
+              <nav>
+                  <ul>
+                      <li id="li1"><a href="register">Sign Up</a></li>
+                  </ul>
+              </nav>
+          </form>
+
+      </div>
+
+      <section id="showcase">
+          <div class="container">
+              <img class="image-movies" src="https://cdn-images-1.medium.com/max/2000/1*lEOjG5403Pg4JOLHr4PtdA.jpeg">
+              <h1>TvShow&Movie Time<span>  because <br>there is SO MUCH to watch</span></h1>
+              <p>Add the shows and movies you love</p>
+          </div>
+      </section>
+
+      <section id="block">
+          <div class="container">
+              
+          </div>
+      </section>
+
+      <section id="boxes">
+          <div class="container">
+              <div class="box">
+                  <img src="https://madaboutmoviez.files.wordpress.com/2015/01/tv-show-time.png">
+                  <h3>Tv shows</h3>
+                  <p>
+                      A television show is a series of related productions intended for broadcast.
+                      Add or vote for the tv shows you really liked.
+                  </p>
+              </div>
+              <div class="box">
+                  <img src="https://pinecroftchurch.files.wordpress.com/2016/03/filmreel.png?w=584">
+                  <h3>Movies</h3>
+                  <p>
+                      Movies are a type of visual communication which uses moving pictures and sound to tell stories,
+                      inform or entertain. <br>Add or vote for the movies you liked.
+                  </p>
+              </div>
+          </div>
+      </section>
+
+      <footer id="footerindex">
+          <p>TvShows&Movies, by Harold and Nicolas</p>
+      </footer>
+      <script>
+          function showDiv() {
+              document.getElementById("loginBox").style.display = "";
+          }
+          function hideDiv() {
+              document.getElementById("loginBox").style.display = "none";
+          }
+      </script>
+  </body>
+</html>

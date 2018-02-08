@@ -1,0 +1,14 @@
+{
+   "users": [
+      {
+         "username": "harold",
+         "email": "dff@ecam.be",
+         "password": "dfsdf"
+      },
+      {
+         "username": "Nico",
+         "email": "nicolasdemeeus33@gmail.com",
+         "password": "Frangin"
+      }
+   ]
+}

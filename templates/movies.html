@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Tvshow&Movies</title>
+      <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body>
+      <header>
+          
+          <div class="container">
+              <div id="branding">
+                  <img class="logo" src="https://lh3.googleusercontent.com/Ozfp2nKok9iLqsiJ8J2akhPMoEe5EeAtd2gZSju25Z6TQl7fDqPFW93oiXIQudK4UwkiNwoymkrrE4xKowQ2ImiQ_t4DxzL54kGScQOi2_ya1SOoo8GMpR__MN1cGsR98cm0Ae97Lw">
+              </div>
+              <nav>
+                  <ul>
+                      {{user}}
+                      <li><a href="addtvmovie">Add tvshow/movie</a></li>
+                      <li><a href="about">About</a></li>
+                      {{usersession}}
+                  </ul>
+              </nav>
+          </div>
+      </header>
+
+      <section class="addtvshow">
+          <div class="container">
+              <p></p>
+          </div>
+      </section>
+
+
+      <section id="block">
+          <div class="container">
+              <table class="table_tvshow">
+                    <tr>
+                        <th id="titlemovie">Title</th>
+                        <th id="descrip">Description</th>
+                        <th>votes</th>
+                        <th>vote!</th>
+                    </tr>
+                    {{ linkmovie }}
+                </table>
+          </div>
+      </section>
+
+      <section id="box">
+          <div class="container">
+              
+          </div>
+      </section>
+
+      <footer>
+          <p>TvShows&Movies, by Harold and Nicolas</p>
+      </footer>
+  </body>
+</html>

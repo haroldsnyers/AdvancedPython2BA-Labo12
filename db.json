@@ -1,0 +1,74 @@
+{
+   "linktv": [
+      {
+         "title": "Game of Thrones",
+         "season": "1",
+         "year": "2011",
+         "episodes": "10",
+         "genre": "fantasy drama",
+         "actors": "Sean Bean",
+         "description": "The story takes place in a fictional world, primarily upon a continent called Westeros, with one storyline occurring on another continent to the east known as Essos. Like the novel, the season initially focuses on the family of nobleman Eddard Stark, who is asked to become chief advisor to his king and longtime friend, Robert Baratheon. Ned must find out who killed the previous Hand of the King, Jon Arryn, while trying to protect his family from their rivals the Lannisters. He uncovers the dark secrets about the Lannisters that his predecessor died trying to expose. Meanwhile, in Essos, the exiled Viserys Targaryen, son of the former king, believes he still has the rightful claim to the throne.",
+         "votes": 8
+      },
+      {
+         "title": "Arrow",
+         "season": "5",
+         "year": "2016",
+         "episodes": "23",
+         "genre": "drama/action/superhero",
+         "actors": "Stephen Amell, David Ramsey, Susanna Thompson",
+         "description": "Five months after the death of Damien Darhk, Oliver is distracted from his new duties as mayor due to continuing as Green Arrow alone, his old team members having gone their separate ways. He is encouraged by Felicity to build a new team by recruiting the amateur vigilantes now working in Star City, like Rene Ramirez. A mysterious hooded figure in black who calls himself \"Prometheus\", wants to personally kill Green Arrow.",
+         "votes": 1
+      },
+      {
+         "title": "The Last Kingdom",
+         "season": "1",
+         "year": "2015",
+         "episodes": "8",
+         "genre": "action/adventure",
+         "actors": "Alexander Dreymon",
+         "description": "England, 872. A Saxon man, raised by Danes, must choose a side and play his part in the birth of a nation, alongside the man who would become known as King Alfred the Great.",
+         "votes": 1
+      },
+      {
+         "title": "Arrow",
+         "season": "1",
+         "year": "2012",
+         "episodes": "23",
+         "genre": "drama/action/superhero",
+         "actors": "Stephen Amell, David Ramsey, Susanna Thompson",
+         "description": "Oliver Queen and his father are lost at sea when their luxury yacht sinks. His father doesn't survive. Oliver survives on an uncharted island for five years learning to fight, but also learning about his father's corruption and unscrupulous business dealings. He returns to civilization a changed man, determined to put things right. He disguises himself with the hood of one of his mysterious island mentors, arms himself with a bow and sets about hunting down the men and women who have corrupted his city.",
+         "votes": 1
+      },
+      {
+         "title": "Colony",
+         "season": "1",
+         "year": "2016",
+         "episodes": "10",
+         "genre": "drama/action/adventure",
+         "actors": "Josh Holloway, Sarah Wayne Callies",
+         "description": "Set in the near future, Los Angeles has been walled-off and isolated by a mysterious occupying force. “Colony” centers on a family torn by opposing forces, struggling to balance difficult decisions to stay together while trying to survive in the new world order.While some people choose to collaborate with the authorities and benefit from the occupation, others rebel and suffer the consequences. Former FBI agent Will Bowman has a more complicated role: he's being forced to collaborate with the proxy government in order to protect his family and recover his son, who was separated during the initial invasion.",
+         "votes": 1
+      },
+      {
+         "title": "Lucifer",
+         "season": "1",
+         "year": "2016",
+         "episodes": "13",
+         "genre": "crime/science-fiction",
+         "actors": "Tom Ellis, Lauren German",
+         "description": "Lucifer Morningstar, the original fallen angel, is bored and unhappy in Hell and decides to retire to Los Angeles and open an upscale nightclub. After a murder takes place outside his club, he meets and intriguing homicide detective named Chloe, and partners up with her to solve cases.",
+         "votes": 1
+      },
+      {
+         "title": "Lucifer",
+         "season": "2",
+         "year": "2016",
+         "episodes": "18",
+         "genre": "crime/science-fiction",
+         "actors": "Tom Ellis, Lauren German",
+         "description": "Lucifer is distracted by his mother’s escape from hell, apparently the only thing he is scared of. Meanwhile, Chloe’s faith in Lucifer is tested by the new medical examiner, Ella. Amanadiel is struggling with his loss of powers",
+         "votes": 1
+      }
+   ]
+}

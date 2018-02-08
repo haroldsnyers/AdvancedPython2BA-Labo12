@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Tvshow&Movies</title>
+      <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body>
+      <header>
+          <div class="container">
+              <div id="branding">
+                  <img class="logo" src="https://lh3.googleusercontent.com/Ozfp2nKok9iLqsiJ8J2akhPMoEe5EeAtd2gZSju25Z6TQl7fDqPFW93oiXIQudK4UwkiNwoymkrrE4xKowQ2ImiQ_t4DxzL54kGScQOi2_ya1SOoo8GMpR__MN1cGsR98cm0Ae97Lw">
+              </div>
+              <nav>
+                  <ul>
+                      {{user}}
+                      <li class="current"><a href="addtvmovie">Add tvshow/movie</a></li>
+                      <li><a href="about">About</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+
+      <section class="addtvshow">
+          <div class="container">
+              <form method="post" action="addmovie">
+                  <p class="padd">Add a movie</p>
+                  <p>
+                      <label>Title</label><br>
+                      <input type="text" name="title" maxlength="128" required="required" placeholder="title">
+                  </p>
+                  <p>
+                      <label>Year of release</label><br>
+                      <input type="number" name="year" maxlength="128" required="required" min="1896" max="2050" placeholder="year?">
+                  </p>
+                  <p>
+                      <label>Duration[min]</label><br>
+                      <input type="number" name="time" maxlength="128" required="required" min="0" placeholder="duration in minutes">
+                  </p>
+                  <p>
+                      <label>Genre</label><br>
+                      <input type="text" name="genre" maxlength="128" required="required" placeholder="genre">
+                  </p>
+                  <p>
+                      <label>Actors</label><br>
+                      <input type="text" name="actors" maxlength="128" required="required" placeholder="actors?">
+                  </p>
+                  <p>
+                      <label>Description<br>
+                      <textarea name="description" rows="5" cols="40" required ></textarea></label>
+                  </p>
+                  <p>
+                      <button type="submit">Add Movie</button>
+                  </p>
+              </form>
+              <form method="post" action="addlinktv">
+                  <p class="padd">Add a tvshow</p>
+                  <p>
+                      <label>Title et season</label><br>
+                      <input type="text" name="title" maxlength="128" required="required" placeholder="title">
+                      <input type="number" name="seasons" maxlength="128" required="required" min="1" placeholder="Which season?">
+                  </p>
+                  <p>
+                      <label>Year of release</label><br>
+                      <input type="number" name="year" maxlength="128" required="required" min="1896" max="2050" placeholder="E.g. 2012">
+                  </p>
+                  <p>
+                      <label>Number of Episodes</label><br>
+                      <input type="number" name="episodes" maxlength="128" required="required" min="1" max="200" placeholder="E.g. 23">
+                  </p>
+                  <p>
+                      <label>Genre</label><br>
+                      <input type="text" name="genre" maxlength="128" required="required" placeholder="E.g. drama">
+                  </p>
+                  <p>
+                      <label>Actors</label><br>
+                      <input type="text" name="actors" maxlength="128" required="required" placeholder="E.g. Stephen Amell">
+                  </p>
+                  <p>
+                      <label>Description<br>
+                      <textarea name="description" rows="5" cols="40" required ></textarea></label>
+                  </p>
+                  <p>
+                      <button type="submit">Add TvShow</button>
+                  </p>
+              </form>
+          </div>
+      </section>
+
+
+      <section id="block">
+          <div class="container">
+              
+          </div>
+      </section>
+
+      <section id="box">
+          <div class="container">
+              
+          </div>
+      </section>
+
+      <footer>
+          <p>TvShows&Movies, by Harold and Nicolas</p>
+      </footer>
+  </body>
+</html>

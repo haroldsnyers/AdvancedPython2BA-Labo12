@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Tvshow&Movies</title>
+      <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body>
+      <header>
+          
+          <div class="container">
+              <div id="branding">
+                  <img class="logo" src="https://lh3.googleusercontent.com/Ozfp2nKok9iLqsiJ8J2akhPMoEe5EeAtd2gZSju25Z6TQl7fDqPFW93oiXIQudK4UwkiNwoymkrrE4xKowQ2ImiQ_t4DxzL54kGScQOi2_ya1SOoo8GMpR__MN1cGsR98cm0Ae97Lw">
+              </div>
+              <nav>
+                  <ul>
+                      {{user}}
+                      <li><a href="addtvmovie">Add tvshow/movie</a></li>
+                      <li class="current"><a href="about">About</a></li>
+                      {{usersession}}
+                  </ul>
+              </nav>
+          </div>
+      </header>
+
+      <div id="loginBox" style="display:none;">
+          <img src="https://image.freepik.com/free-icon/male-user-shadow_318-34042.jpg" class="user">
+          <button id="buttonClose" type="button" name="close" value="X" onclick="hideDiv()">X</button>
+          <h2 id="h2-loginbox">Log in Here</h2>
+          <form action="login">
+              <p>Email or Username</p>
+              <input type="text" name="uname" required="required" placeholder="Enter Email or username">
+              <p>Password</p>
+              <input type="password" required="required" name="psw" placeholder="*******">
+              <input type="submit" name="" value="Sign In">
+              <nav>
+                  <ul>
+                      <li id="li1"><a href="register">Sign Up</a></li>
+                  </ul>
+              </nav>
+          </form>
+
+      </div>
+      <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">About Us</h1>
+          <p>
+            Amateur of films or Series, you are on the good site! Easy to use and allows you to share the films you love
+            with all your friends and family. After having created an account, all the doors open. You will be able to
+            add the movies or tv shows you prefer and to visualize all the films and series added by the other users.
+            First of all it gives you good ideas of films and series if you are in search of some. Secondly, you have
+            the possibility to vote for those you already saw and that you have appreciated! A ranking is done according
+            to the number of votes, then if you want to view the trendy movies of the month, look at our top ten.
+          </p>
+          <h1 class="page-title">How to use the website</h1>
+          <p class="dark">
+            To be able to access the real part of the website, you will have to login. To do so just click on the login
+            button. If you are not a member yet, click on "sign up". You will then be redirected to the pages of Tv
+            shows and movies. You can vote for those you like and if it isn't already in the list, you can add it by
+            going to the page "Add Tvshow/Movie".
+          </p>
+          <h1 class="page-title">Update</h1>
+          <p>
+            For the next update what can you expect? The first steps for making the website work was making a database,
+            however we found not long ago a way to import or to use a database made on the internet with all the movies
+            and tv shows. This database is updated everyday, so you will be missing no movies or tv shows. So we had to
+            rethink a bit our website. First thing that will come is your own profile which will include the movies and
+            tv shows you have watched, you love, you wanna watch, exc. You will still be able to vote for them,
+            this is in place to rank the movies and tv shows on the website. We will introduce the "add to watchlist"
+            button too.
+          </p>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Top 10 Tv Shows December 2017</h3>
+              <ol class="top">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ol>
+          </div>
+        </aside>
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Top 10 Movies December 2017</h3>
+              <ol class="top">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ol>
+          </div>
+        </aside>
+      </div>
+      </section>
+
+      <footer>
+          <p>TvShows&Movies, Copyright &copy; 2017</p>
+      </footer>
+      <script>
+          function showDiv() {
+              document.getElementById("loginBox").style.display = "";
+          }
+          function hideDiv() {
+              document.getElementById("loginBox").style.display = "none";
+          }
+      </script>
+  </body>
+</html>
