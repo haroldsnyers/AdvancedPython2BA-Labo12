@@ -22,7 +22,16 @@ def roots(a, b, c):
     Post: Returns a tuple with zero, one or two elements corresponding
           to the roots of the ax^2 + bx + c polynomial.
     """
-    pass
+    D = b ** 2 - 4 * a * c
+    x1 = (-b + D ** (1 / 2)) / (2 * a)
+    x2 = (-b + D ** (1 / 2)) / (2 * a)
+    if D > 0:
+        r = (x1, x2)
+    elif D == 0:
+        r = x1
+    else:
+        r = ()
+    return r
 
 def integrate(function, lower, upper):
     """Approximates the integral of a fonction between two bounds
@@ -33,16 +42,7 @@ def integrate(function, lower, upper):
     Post: Returns an approximation of the integral from 'lower' to 'upper'
           of the specified 'function'.
     """
-    D = b ** 2 - 4 * a * c
-    x1 = (-b + D ** (1 / 2)) / (2 * a)
-    x2 = (-b + D ** (1 / 2)) / (2 * a)
-    if D > 0:
-        r = (x1, x2)
-    elif D == 0:
-        r = (x1)
-    else:
-        r = ()
-    return r
+    pass
 
 if __name__ == '__main__':
     print(fact(5))
